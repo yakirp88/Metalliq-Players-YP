@@ -1,0 +1,21 @@
+{
+ "name"         : "Search - [COLOR FF0084FF]1080P Movie[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.origin",
+ "plugin"       : "plugin.video.1080pmovie",
+ "priority"     : 100,
+ "id"           : "search.1080pmovie.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+  "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.1080pmovie/?description&amp;extra&amp;fanart=C%3a%5cUsers%5cyakir%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.1080pmovie%5cfanart.jpg&amp;iconimage=C%3a%5cUsers%5cyakir%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.1080pmovie%5cicon.png&amp;mode=2&amp;name=Search&amp;url&quot;",
+    "steps"     : [
+     "@keyboard: {title}",
+	 ".*{title}.*"     ],
+    "action"    : "PLAY"
+    }
+  ]
+ ] 
+}

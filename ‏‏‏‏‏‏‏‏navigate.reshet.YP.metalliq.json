@@ -1,0 +1,25 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]Reshet[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.Ebs",
+ "plugin"       : "plugin.video.reshet.ebs.video",
+ "priority"     : 35,
+ "id"           : "navigate.reshet.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.reshet.ebs.video",
+    "steps"     : [".*{clearname}.*",".*עונה {season}.*",".*פרקים.*",".* {episode}:.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.reshet.ebs.video",
+    "steps"     : [".*{clearname}.*",".*עונה {season}.*",".*פרקים.*",".*פרק הבכורה.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

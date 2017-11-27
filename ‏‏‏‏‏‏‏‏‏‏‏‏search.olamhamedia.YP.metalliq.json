@@ -1,0 +1,29 @@
+{
+ "name"         : "Search - [COLOR ff0084ff]Olam-Hamedia[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.Shadow",
+ "plugin"       : "plugin.video.kmediatorrent",
+ "priority"     : 200,
+ "id"           : "search.olamhamedia.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.Olam/?description&amp;fanart&amp;iconimage&amp;mode=4&amp;name=%5bCOLOR%20khaki%5d%20%d7%97%d7%99%d7%a4%d7%95%d7%a9%20%5b%2fCOLOR%5d&amp;original_name&amp;url=http%3a%2f%2folamha-media.com%2f",
+    "steps"     : ["@keyboard: {title}",".*({title} לצפייה|{title} מדובב).*",".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.Olam/?description&amp;fanart&amp;iconimage&amp;mode=4&amp;name=%5bCOLOR%20khaki%5d%20%d7%97%d7%99%d7%a4%d7%95%d7%a9%20%5b%2fCOLOR%5d&amp;original_name&amp;url=http%3a%2f%2folamha-media.com%2f",
+    "steps"     : ["@keyboard: {clearname} עונה {season} פרק {episode}",".*{clearname} עונה {season} פרק {episode} .*",".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

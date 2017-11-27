@@ -1,0 +1,22 @@
+{
+ "name"         : "Search - [COLOR FF0084FF]StrictlyHD[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.lucifer",
+ "plugin"       : "plugin.video.strictlyhd",
+ "priority"     : 100,
+ "id"           : "search.strictlyhd.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+  "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.strictlyhd/?source=search",
+    "steps"     : [
+     "@keyboard: {title}",
+	 "{title}",
+	 ".*"     ],
+    "action"    : "PLAY"
+    }
+  ]
+ ] 
+}

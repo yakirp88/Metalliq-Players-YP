@@ -1,0 +1,19 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]Supremacy 4K[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.supremacy",
+ "priority"     : 5,
+ "id"           : "navigate.supremacy4k.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : ["$$.*$$4K Movies$$.*$$","{title}.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

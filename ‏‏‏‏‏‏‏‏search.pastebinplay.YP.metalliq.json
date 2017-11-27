@@ -1,0 +1,35 @@
+{
+ "name"         : "Search - [COLOR ff0084ff]Pastebin Play[/COLOR] [COLOR FF0084FF]-[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.shadow",
+ "plugin"       : "plugin.video.PastebinPlay",
+ "priority"     : 50,
+ "id"           : "search.pastebinplay.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.PastebinPlay/?cat_level=IA........%0a&amp;count=0&amp;description&amp;fanart&amp;iconimage&amp;index_depth=0&amp;mode=6&amp;name=%5bCOLOR%20aqua%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&amp;page&amp;url=www",
+    "steps"     : ["@keyboard: {imdb}", ".*"],
+    "action"    : "RUN"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.PastebinPlay/?cat_level=IA........%0a&amp;count=0&amp;description&amp;fanart&amp;iconimage&amp;index_depth=0&amp;mode=6&amp;name=%5bCOLOR%20aqua%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&amp;page&amp;url=www",
+    "steps"     : ["@keyboard: {title}", ".*"],
+    "action"    : "RUN"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.PastebinPlay/?cat_level=IA........%0a&amp;count=0&amp;description&amp;fanart&amp;iconimage&amp;index_depth=0&amp;mode=6&amp;name=%5bCOLOR%20aqua%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&amp;page&amp;url=www",
+    "steps"     : ["@keyboard: {imdb}", ".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

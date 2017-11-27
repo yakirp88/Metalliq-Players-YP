@@ -1,0 +1,21 @@
+{
+ "name"         : "Search - [COLOR FF0084FF]The Pyramid[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.zt",
+ "plugin"       : "plugin.video.thepyramid",
+ "priority"     : 100,
+ "id"           : "search.thepyramid.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+  "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.thepyramid/?fanart=C%3a%5cUsers%5cyakir%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.thepyramid%5cfanart.jpg&amp;mode=41&amp;name=%5bB%5d%5bI%5d%5bCOLORwhite%5dPYRAMID%20MOVIE%20%26%20CATCH%20UP%20TV%20SEARCH%5b%2fB%5d%5b%2fI%5d%5b%2fCOLOR%5d&amp;url=%5bB%5d%5bI%5d%5bCOLORwhite%5dPYRAMID%20MOVIE%20%26%20CATCH%20UP%20TV%20SEARCH%5b%2fB%5d%5b%2fI%5d%5b%2fCOLOR%5d",
+    "steps"     : [
+     "@keyboard: {title}",
+	 ".*{title}.*"    ],
+    "action"    : "ACTIVATE"
+    }
+  ]
+ ] 
+}

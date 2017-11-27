@@ -1,0 +1,35 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]ScraperTest[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.scrapertest",
+ "priority"     : 5,
+ "id"           : "navigate.scrapertest.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin.video.scrapertest",
+    "steps"     : ["@keyboard: {title}","@keyboard: {year}","@keyboard: {imdb}"],
+    "action"    : "ACTIVATE"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["TV-Shows", "Search", "@keyboard: {clearname}",".*{clearname}.*","season {season}","episode {episode}:.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["TV-Shows", "Search", "@keyboard: {clearname}",".*{clearname}.*","season {season}","episode {episode}:.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

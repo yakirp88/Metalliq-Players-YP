@@ -1,0 +1,40 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]Gozlan  [Autoplay][/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.Shadow",
+ "plugin"       : "plugin.video.gozlan.me",
+ "priority"     : 20,
+ "id"           : "navigate.gozlanautoplay.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.gozlan.me/",
+    "steps"     : [
+	"חיפוש סרטים",
+     "@keyboard:{title}",
+	 "{name}",
+	 ".*ניגון אוטומטי.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+"tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.gozlan.me/",
+    "steps"     : [
+	"סדרות",
+     "{clearname}",
+	 "{clearname} עונה {season}",
+	 "{clearname} עונה {season} פרק {episode} .*",
+	 ".*ניגון אוטומטי.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ] 
+}

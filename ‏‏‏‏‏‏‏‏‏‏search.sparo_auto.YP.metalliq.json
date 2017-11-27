@@ -1,0 +1,59 @@
+{
+ "name"         : "Search - [COLOR ff0084ff]Sparo Autoplay[/COLOR] [COLOR FF0084FF]-[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.sparo",
+ "priority"     : 50,
+ "id"           : "search.sparo_auto.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo",
+    "steps"     : [".*חיפוש.*","@keyboard: {title}", "{title}","BDRip",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo",
+    "steps"     : [".*חיפוש.*","@keyboard: {title}", "{title}","HD",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo",
+    "steps"     : [".*חיפוש.*","@keyboard: {title}", "{title}","TS",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo",
+    "steps"     : [".*חיפוש.*","@keyboard: {title}", "{title}","@any",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo/?description=%d7%97%d7%a4%d7%a9&amp;fanart&amp;iconimage&amp;mode=9&amp;name=%5bCOLOR%20khaki%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&amp;url=www",
+    "steps"     : ["@keyboard: {clearname}","{clearname}",".* {season} .*",".*פרק {episode}.*","HDTV",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo/?description=%d7%97%d7%a4%d7%a9&amp;fanart&amp;iconimage&amp;mode=9&amp;name=%5bCOLOR%20khaki%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&amp;url=www",
+    "steps"     : ["@keyboard: {clearname}","{clearname}",".* {season} .*",".*פרק {episode}.*","BluRay",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sparo/?description=%d7%97%d7%a4%d7%a9&amp;fanart&amp;iconimage&amp;mode=9&amp;name=%5bCOLOR%20khaki%5d%d7%97%d7%99%d7%a4%d7%95%d7%a9%5b%2fCOLOR%5d&amp;url=www",
+    "steps"     : ["@keyboard: {clearname}","{clearname}",".* {season} .*",".*פרק {episode}.*","@any",".*ניגון אוטומטי.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

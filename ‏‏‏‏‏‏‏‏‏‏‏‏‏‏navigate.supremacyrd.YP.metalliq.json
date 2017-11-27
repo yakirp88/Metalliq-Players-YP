@@ -1,0 +1,66 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]Supremacy RD[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.supremacy",
+ "priority"     : 5,
+ "id"           : "navigate.supremacyrd.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : ["$$.*$$Real Debrid Movies$$.*$$","{title}.*"],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : ["$$.*$$New Releases$$.*$$","$$.*$${title}$$.*$$"],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&amp;mode=1&amp;name=%5bCOLOR%20aqua%5dMovies%5b%2fCOLOR%5d&amp;url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fMovies%2fmovies.txt",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/?fanart=http%3a%2f%2fstephen-builds.uk%2fart%2f20839702_10207884860798337_363786087_o.jpg&amp;mode=1&amp;name=%5bCOLOR%20aqua%5dMovies%5b%2fCOLOR%5d&amp;url=http%3a%2f%2fstephen-builds.uk%2fsupremacy%2fMovies%2fmovies.txt",
+    "steps"     : ["{title}.*"],
+    "action"    : "ACTIVATE"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : ["$$.*$$Plex scraper$$.*$$","{title}"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : [".*Movie Genres.*","@anynotcontaining: WELCOME","{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : [".*Movies A to Z.*",".*{title[0]}.*","{title}"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : ["$$.*$$Kid's Movies$$.*$$","@anycontaining: collection|Movies","{title}.*{year}"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   
+  ]
+ ]
+} 

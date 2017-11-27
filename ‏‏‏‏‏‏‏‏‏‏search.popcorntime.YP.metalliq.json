@@ -1,0 +1,47 @@
+{
+ "name"         : "Search - [COLOR ff0084ff]Popcorn Time[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "plugin.video.kodipopcorntime.repository",
+ "plugin"       : "plugin.video.kodipopcorntime",
+ "priority"     : 5,
+ "id"           : "search.popcorntime.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["Movies", "Search", "@keyboard: {title}",".*{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["Movies", "Search", "@keyboard: {title}","{title}"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["Movies", "Search", "@keyboard: {title}","{title}"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["TV-Shows", "Search", "@keyboard: {clearname}",".*{clearname}.*","season {season}","episode {episode}:.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kodipopcorntime/",
+    "steps"     : ["TV-Shows", "Search", "@keyboard: {clearname}",".*{clearname}.*","season {season}","episode {episode}:.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

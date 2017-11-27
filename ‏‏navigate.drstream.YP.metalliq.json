@@ -1,0 +1,64 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]DR Stream[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.metalkettle",
+ "plugin"       : "plugin.video.Drstream",
+ "priority"     : 198,
+ "id"           : "direct.Drstream.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+  "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.Drstream/",
+     "steps"     : [
+     ".*{year}.*",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.Drstream/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fpastebin.com%2fraw%2fzQxpvUge",
+     "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.Drstream/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fpastebin.com%2fraw%2f56yEQi8a",
+     "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.Drstream/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fpastebin.com%2fraw%2fqPn2URTB",
+     "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.Drstream/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fpastebin.com%2fraw%2fpxULxMD2",
+     "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.Drstream/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fpastebin.com%2fraw%2fM4NKNxjA",
+     "steps"     : [
+	 "@any",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.Drstream/?action=directory&amp;content=addons&amp;url=https%3a%2f%2fpastebin.com%2fraw%2fmMy3p5Ur",
+     "steps"     : [
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ] 
+}

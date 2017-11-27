@@ -1,0 +1,35 @@
+{
+ "name"         : "Search - [COLOR red]S[/COLOR][COLOR darkorange]d[/COLOR][COLOR deepskyblue]a[/COLOR][COLOR darkgreen]r[/COLOR][COLOR purple]o[/COLOR][COLOR yellow]t[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.sdarot",
+ "plugin"       : "plugin.video.sdarot.tv",
+ "priority"     : 100,
+ "id"           : "search.sdarot.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+  "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.sdarot.tv/search/0",
+    "steps"     : [
+     "@keyboard: {clearname}",
+	 "{clearname}-.*",
+	 "עונה {season}",
+	 "פרק {episode}"
+     ],
+    "action"    : "PLAY"
+    },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.sdarot.tv/search/0",
+    "steps"     : [
+     "@keyboard: {clearname}",
+	 "{clearname}-.*",
+	 "עונה {season}",
+	 "פרק {episode}"
+     ],
+    "action"    : "PLAY"
+    }
+  ]
+ ] 
+}

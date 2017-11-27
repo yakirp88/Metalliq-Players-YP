@@ -1,0 +1,29 @@
+{
+ "name"         : "Direct - [COLOR FF0084FF]Ugottoc[/COLOR]  ([COLOR gold]YP[/COLOR])",
+ "plugin"       : "plugin.video.ugottoc",
+ "priority"     : 200,
+ "id"           : "direct.ugottoc.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ugottoc/?rand=0.{now}&tmdb_id={id}&title={title}&imdb_id={imdb}&mode=play_movie&year={year}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ugottoc/?rand=0.{now}&episode={episode}&mode=play_episode&tmdb_id={tmdb}&year={year}&season={season}&display={season}x{episode}.+{title_+}&showtitle={clearname_+}&imdb_id={imdb}",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}

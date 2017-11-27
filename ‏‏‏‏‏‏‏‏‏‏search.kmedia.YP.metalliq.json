@@ -1,0 +1,41 @@
+{
+ "name"         : "Search - [COLOR ff0084ff]Kmediatorrent[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.kmediatorrent",
+ "priority"     : 5,
+ "id"           : "search.kmedia.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kmediatorrent/tpb/search",
+    "steps"     : ["@keyboard: {title} {year} 1080P",".*{title}.*{year}.*(BLURAY|WEB-DL).*"],
+    "action"    : "RUN"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kmediatorrent/tpb/search",
+    "steps"     : ["@keyboard: {title} {year} 720P",".*{title}.*{year}.*(BLURAY|WEB-DL).*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kmediatorrent/tpb/search",
+    "steps"     : ["@keyboard: {title} {year}",".*{title}.*{year}.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.kmediatorrent/tpb/search",
+    "steps"     : ["@keyboard: {clearname} S{season:02d}E{episode:02d}","{clearname} S{season:02d}E{episode:02d}.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

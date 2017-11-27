@@ -1,0 +1,23 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]10IL[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.kodil",
+ "plugin"       : "plugin.video.tenil",
+ "priority"     : 10,
+ "id"           : "navigate.10il.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.tenil/",
+    "steps"     : [
+     ".*כל התוכניות.*",
+     ".*{clearname}.*"
+     ],
+    "action"    : "ACTIVATE"
+ 
+   }
+  ]
+ ] 
+}

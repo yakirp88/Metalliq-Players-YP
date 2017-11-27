@@ -1,0 +1,30 @@
+{
+ "name"         : "Direct - [COLOR FF0084FF]MYRIAD[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.dandymedia",
+ "plugin"       : "plugin.video.myriad_gw",
+ "priority"     : 200,
+ "id"           : "direct.myriad.yp",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.myriad_gw/?description=%0a{info[plot]}.&amp;episode&amp;iconimage={info[poster]}&amp;mode=80&amp;name=%5bB%5d%5bCOLOR%20white%5d{title|ws(%20)}%20({year})%5b%2fCOLOR%5d%5b%2fB%5d&amp;season&amp;title={title|ws(%20)}&amp;url={imdb}&amp;year=({year})",
+    "steps"     : [".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      :"plugin://plugin.video.myriad_gw/?description=%0aAfter%20Carl%20is%20accidentally%20shot%2c%20the%20group%20are%20brought%20to%20a%20family%20living%20on%20a%20nearby%20farm.%20Shane%20makes%20a%20dangerous%20trip%20in%20search%20of%20medical%20supplies.%20%20%20%20&amp;episode=%5bS{season:02d}%20E{episode:02d}%5d&amp;iconimage=https%3a%2f%2fimages-na.ssl-images-amazon.com%2fimages%2fM%2fMV5BMjE2Mjk3NTc0Ml5BMl5BanBnXkFtZTcwNzgwNDQ5Ng%40%40._V1_.SX593_SY799_.jpg&amp;mode=90&amp;name=%5bB%5d%5bCOLOR%20white%5d%5bS{season:02d}%20E{episode:02d}%5d%20{title|ws(%20)}%5b%2fCOLOR%5d%5b%2fB%5d&amp;season&amp;title={clearname|ws(%20)}&amp;url={clearname|ws(%20)}&amp;year={year}",
+    "steps"     : [".*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}

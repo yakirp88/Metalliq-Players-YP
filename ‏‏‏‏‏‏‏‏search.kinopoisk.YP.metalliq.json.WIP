@@ -1,0 +1,19 @@
+{
+ "name"         : "Search - [COLOR ff0084ff]KinoPoisk[/COLOR] [COLOR FF0084FF]-[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.tdw1980",
+ "plugin"       : "plugin.video.KinoPoisk.ru",
+ "priority"     : 50,
+ "id"           : "search.kinopoisk.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "ru",
+    "link"      : "plugin://plugin.video.KinoPoisk.ru/?id=301&amp;mode=Torrents",
+    "steps"     : ["@keyboard: {title}", ".*{title}.*",".*"],
+    "action"    : "RUN"
+   }
+  ]
+ ]
+} 

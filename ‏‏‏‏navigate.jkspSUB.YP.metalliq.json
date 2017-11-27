@@ -1,0 +1,23 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]jksp  [HebSub][/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.jksp",
+ "plugin"       : "plugin.video.jksp",
+ "priority"     : 20,
+ "id"           : "navigate.jkspSUB.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.jksp/",
+    "steps"     : [
+     ".*Movies with Subtitles.*",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+ 
+   }
+  ]
+ ] 
+}

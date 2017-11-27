@@ -1,0 +1,35 @@
+{
+ "name"         : "Zonal - [COLOR ff0084ff]TVIL(RoiD)[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.RoiD",
+ "priority"     : 100,
+ "id"           : "zonal.tvil.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+  "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.RoiD/?item=title%3d%255BCOLOR%2bwhite%255D%255BB%255DTvil.me%255B%252FB%255D%255B%252FCOLOR%255D%2b-%2bVOD%2bFrom%2bAll%2bOver%2bThe%2bWorld%2b%2528%25D7%25AA%25D7%25A8%25D7%2592%25D7%2595%25D7%259D%2b%25D7%259E%25D7%2595%25D7%2591%25D7%25A0%25D7%2594%2529%26url%3dVOD%252FTvil.cfg%26definedIn%3dVOD%252F_VOD_Menu.cfg%26director%3dRoiD%26type%3drss%26icon%3dC%253A%255CUsers%255Cyakir%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.RoiD%255Cresources%255Cimages%255CTvil_v02.jpg&amp;mode=1",
+    "steps"     : [
+     "{clearname}.*",
+     "עונה {season}",
+	 "פרק {episode}",
+	 ".*"
+     ],
+    "action"    : "ACTIVATE"
+    },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.RoiD/?item=title%3d%255BCOLOR%2bwhite%255D%255BB%255DTvil.me%255B%252FB%255D%255B%252FCOLOR%255D%2b-%2bVOD%2bFrom%2bAll%2bOver%2bThe%2bWorld%2b%2528%25D7%25AA%25D7%25A8%25D7%2592%25D7%2595%25D7%259D%2b%25D7%259E%25D7%2595%25D7%2591%25D7%25A0%25D7%2594%2529%26url%3dVOD%252FTvil.cfg%26definedIn%3dVOD%252F_VOD_Menu.cfg%26director%3dRoiD%26type%3drss%26icon%3dC%253A%255CUsers%255Cyakir%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.RoiD%255Cresources%255Cimages%255CTvil_v02.jpg&amp;mode=1",
+    "steps"     : [
+     ".*{clearname}",
+     "עונה {season}",
+	 "פרק {episode}",
+	 ".*"
+     ],
+    "action"    : "ACTIVATE"
+    }
+  ]
+ ] 
+}

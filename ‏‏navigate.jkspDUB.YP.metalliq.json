@@ -1,0 +1,23 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]jksp  [HebDub][/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.jksp",
+ "plugin"       : "plugin.video.jksp",
+ "priority"     : 15,
+ "id"           : "navigate.jkspDUB.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.jksp/",
+    "steps"     : [
+     ".*Movies dubbed.*",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+ 
+   }
+  ]
+ ] 
+}

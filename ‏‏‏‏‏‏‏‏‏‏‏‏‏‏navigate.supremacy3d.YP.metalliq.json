@@ -1,0 +1,19 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]Supremacy 3D[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "NA",
+ "plugin"       : "plugin.video.supremacy",
+ "priority"     : 5,
+ "id"           : "navigate.supremacy3d.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.supremacy/",
+    "steps"     : ["$$.*$$3D Films$$.*$$","{title|replace(',)|replace(&colon;,)} {year} 3D"],
+    "action"    : "PLAY"
+   }
+    ]
+ ]
+} 

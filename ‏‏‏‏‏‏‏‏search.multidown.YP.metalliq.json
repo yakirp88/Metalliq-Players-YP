@@ -1,0 +1,27 @@
+{
+ "name"         : "SEARCH - [COLOR ff0084ff]MultiDown[/COLOR] [COLOR FF0084FF]-[/COLOR] ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.MultiDownRepo",
+ "plugin"       : "plugin.video.multidown",
+ "priority"     : 50,
+ "id"           : "search.multidown.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.multidown/?action=search",
+    "steps"     : ["@keyboard: {title}", ".*{title}.*"],
+    "action"    : "ACTIVATE"
+ 
+   },
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.multidown/?action=search",
+    "steps"     : ["@keyboard: {title}", ".*{title}.*"],
+    "action"    : "ACTIVATE"
+ 
+   }
+  ]
+ ]
+} 

@@ -1,0 +1,49 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]Suprabox[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.lookingglass",
+ "plugin"       : "plugin.video.suprabox",
+ "priority"     : 5,
+ "id"           : "navigate.suprabox.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.suprabox/?description&amp;fanart=http%3a%2f%2fi.imgur.com%2fioBnNug.png&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20darkviolet%5dDTS%5b%2fCOLOR%5d%20%5bCOLOR%20silver%5d1080p%5b%2fB%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2flookingglass.rocks%2fjay77%2fmovdts.xml",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.suprabox/?description&amp;fanart=http%3a%2f%2fi.imgur.com%2fioBnNug.png&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20darkviolet%5d1080p%5b%2fCOLOR%5d%5bCOLOR%20silver%5dMOVIES%5b%2fB%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2flookingglass.rocks%2fjay77%2fmovies.xml",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.suprabox/?description&amp;fanart=http%3a%2f%2fi.imgur.com%2fioBnNug.png&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20darkviolet%5dUHD%5b%2fCOLOR%5d%20%5bCOLOR%20silver%5d4K%5b%2fB%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2flookingglass.rocks%2fjay77%2f4kmovies.xml",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.suprabox/?description&amp;fanart=http%3a%2f%2fi.imgur.com%2fioBnNug.png&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20darkviolet%5dREMUX%5b%2fCOLOR%5d%20%5bCOLOR%20silver%5dRD%20ONLY%5b%2fB%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2flookingglass.rocks%2fjay77%2fmoviesremux.xml",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.suprabox/?description&amp;fanart=http%3a%2f%2fi.imgur.com%2fioBnNug.png&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20darkviolet%5dMOVIES%5b%2fCOLOR%5d%20%5bCOLOR%20silver%5dSPECIALS%5b%2fB%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2flookingglass.rocks%2fjay77%2fmoviesspecials.xml",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   },
+   {
+    "language": "en",
+    "link"      : "plugin://plugin.video.suprabox/?description&amp;fanart=http%3a%2f%2fi.imgur.com%2fioBnNug.png&amp;mode=1&amp;name=%5bB%5d%5bCOLOR%20darkviolet%5d720p%5b%2fCOLOR%5d%5bCOLOR%20silver%5dMOVIES%5b%2fB%5d%5b%2fCOLOR%5d&amp;url=http%3a%2f%2flookingglass.rocks%2fjay77%2f720mov.xml",
+    "steps"     : ["{title}.*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 

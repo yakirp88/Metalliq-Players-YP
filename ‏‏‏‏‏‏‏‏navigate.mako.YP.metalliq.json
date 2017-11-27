@@ -1,0 +1,19 @@
+{
+ "name"         : "Navigate - [COLOR ff0084ff]MAKO[/COLOR] - ([COLOR gold]YP[/COLOR])",
+ "repository"   : "repository.xbmc-israel",
+ "plugin"       : "plugin.video.MakoTV",
+ "priority"     : 25,
+ "id"           : "navigate.mako.YP",
+ "filters"      : {},
+ "postprocess"  : "",
+ "tvshows"       : [
+  [
+   {
+    "language": "he",
+    "link"      : "plugin://plugin.video.MakoTV/",
+    "steps"     : [".*MakoTV.*","{clearname}","עונה {season}","פרק {episode} .*"],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+} 
